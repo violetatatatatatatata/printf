@@ -10,4 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
+void	ft_putnum(int n, size_t *count, int base)
+{
+	if (base == 2)
+		ft_putunsignint(n, &count);
+	else if (base == 10)
+		ft_putint(n, &count);
+	else if (base == 16)
+		ft_puthexmin(n, &count);
+	else
+		return ;
+}

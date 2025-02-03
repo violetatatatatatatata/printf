@@ -10,4 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
+void	ft_putunsignint(int n, size_t *count)
+{
+	n = (unsigned int)n;
+	ft_putint(n, &count)
+}
