@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putporc.c                                       :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/03 23:28:49 by avelandr          #+#    #+#             */
-/*   Updated: 2025/02/03 23:37:46 by avelandr         ###   ########.fr       */
+/*   Created: 2025/02/02 18:02:00 by avelandr          #+#    #+#             */
+/*   Updated: 2025/02/04 12:28:40 by avelandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef LIBFTPRINTF_H
+# define LIBFTPRINTF_H
 
-void	ft_putporc(size_t *count)
-{
-	ft_putchar("%", &count);
-}
+# include <stdarg.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include "libft.h"
+
+void    ft_putchar(char c, size_t *count);
+
+#endif
