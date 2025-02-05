@@ -6,7 +6,7 @@
 #    By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/02 16:12:25 by avelandr          #+#    #+#              #
-#    Updated: 2025/02/02 17:59:20 by avelandr         ###   ########.fr        #
+#    Updated: 2025/02/05 17:09:31 by avelandr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,10 @@ CFLAGS = -Wall -Werror -Wextra
 NAME = libftprintf.a
 
 # Lista de funciones a compilar
-FUNCTIONS = ft_.c \
+FUNCTIONS =	ft_putchar.c \
+		ft_hexpointer.c \
+		ft_numtostr.c
+		ft_print
 
 OBJS = $(FUNCTIONS:%.c=%.o)
 

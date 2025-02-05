@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putporc.c                                       :+:      :+:    :+:   */
+/*   ft_hexpointer.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/03 23:28:49 by avelandr          #+#    #+#             */
-/*   Updated: 2025/02/03 23:37:46 by avelandr         ###   ########.fr       */
+/*   Created: 2025/02/02 19:03:11 by avelandr          #+#    #+#             */
+/*   Updated: 2025/02/05 16:45:26 by avelandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putporc(size_t *count)
+//	imprime un puntero en formato hexadecimal
+
+void ft_hexpointer(unsigned int num, size_t *count, char *base)
 {
-	ft_putchar("%", &count);
+	char		*str;
+	unsigned long	*adress;
+
+	adress = (unsigned long)ptr;
+        ft_putstr("0x", count);
+	str = ft_numtostr(num, HEX_LWBASE);
+        ft_putstr(str, count);
+	free(str);
 }
