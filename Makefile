@@ -6,7 +6,7 @@
 #    By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/02 16:12:25 by avelandr          #+#    #+#              #
-#    Updated: 2025/02/08 13:36:09 by avelandr         ###   ########.fr        #
+#    Updated: 2025/02/12 15:18:06 by avelandr         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,8 @@ FUNCTIONS = ft_putchar.c \
 	ft_puthex.c \
 	ft_putnum.c \
 	ft_putstr.c \
-	ft_putunsignint.c
+	ft_putunsignint.c \
+	ft_calloc.c
 
 OBJS = $(FUNCTIONS:%.c=%.o)
 
@@ -40,7 +41,7 @@ $(NAME): $(OBJS)
 $(OBJS): %.o: %.c ft_printf.h Makefile
 	$(CC) -c $(CFLAGS) $< -o $@
 
-$(BOBJS): %.o: %.c ft_printf.h
+$(BOBJS): %.o: %.c ft_printf.h 
 	$(CC) -c $(CFLAGS) $< -o $@
 
 # Rule to run Valgrind for memory leak checks

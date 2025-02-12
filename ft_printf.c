@@ -6,13 +6,13 @@
 /*   By: avelandr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 12:29:33 by avelandr          #+#    #+#             */
-/*   Updated: 2025/02/08 13:56:52 by avelandr         ###   ########.fr       */
+/*   Updated: 2025/02/12 15:09:35 by avelandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void    ft_selector(va_list va, char *str, size_t *count);
+void	ft_selector(va_list va, char *str, size_t *count);
 
 size_t	ft_printf(char const *str, ...)
 {
@@ -22,7 +22,7 @@ size_t	ft_printf(char const *str, ...)
 	if (!str)
 		return (0);
 	count = 0;
-        va_start(va, str);
+	va_start(va, str);
 	while (*str)
 	{
 		if (*str == '%')

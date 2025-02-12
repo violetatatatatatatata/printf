@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 18:02:00 by avelandr          #+#    #+#             */
-/*   Updated: 2025/02/08 13:25:34 by avelandr         ###   ########.fr       */
+/*   Updated: 2025/02/12 15:21:29 by avelandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,6 @@ void	ft_puthex(unsigned int num, size_t *count, char *base);
 void	ft_putnum(int n, size_t *count);
 void	ft_putstr(char *str, size_t *count);
 void	ft_putunsignint(unsigned int n, size_t *count);
+void	*ft_calloc(size_t nmemb, size_t size);
 
 #endif
