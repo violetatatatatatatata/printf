@@ -6,22 +6,23 @@
 /*   By: avelandr <avelandr@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/02 19:24:16 by avelandr          #+#    #+#             */
-/*   Updated: 2025/02/05 16:45:45 by avelandr         ###   ########.fr       */
+/*   Updated: 2025/02/08 13:42:58 by avelandr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t  ft_digits(int n, char *base);
+size_t  ft_digits(int n, int base_len);
 void    *ft_calloc(size_t nmemb, size_t size);
 size_t  ft_strlen(const char *s);
+void    *ft_memset(void *b, int c, size_t len);
 
 /*
 	Esta funcion retorna un string del numero deseado en la base
 	correspondiente
 */
 
-char	ft_numtostr(unsigned long long n, char *base)
+char	*ft_numtostr(unsigned long long n, char *base)
 {
 	int	base_len;
 	int	num_len;
@@ -79,4 +80,19 @@ size_t	ft_strlen(const char *s)
 		s++;
 	}
 	return (i);
+}
+
+void    *ft_memset(void *b, int c, size_t len)
+{
+        size_t                  i;
+        unsigned char   *ptr;
+
+        ptr = (unsigned char *)b;
+        i = 0;
+        while (i < len)
+        {
+                ptr[i] = (unsigned char)c;
+                i++;
+        }
+        return (b);
 }
