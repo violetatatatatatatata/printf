@@ -24,7 +24,6 @@ Este proyecto es una implementación personalizada de la función `printf` en el
 ### Clonar el Repositorio
 ```sh
 git clone https://github.com/violetatatatatatatata/printf.git
-cd printf
 ```
 
 ### Compilación
