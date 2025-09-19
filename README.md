@@ -1,4 +1,4 @@
-# Proyecto `printf`
+# `ft_printf()`
 
 ## Descripción
 
