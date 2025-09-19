@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto es una implementación personalizada de la función `printf` en el lenguaje de programación C.
+Este proyecto es una implementación personalizada de la función `printf` de la librería <stdio.h>.
 
 ![til](https://c.tenor.com/B2G3qZWSHZsAAAAC/tenor.gif)
 
